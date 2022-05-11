@@ -1,0 +1,16 @@
+#window-body {
+  position: absolute;
+  z-index: 9;
+  text-align: center;
+}
+
+#title-bar {
+    padding: 3px 2px 3px 3px;
+    cursor: move;
+    z-index: 10;
+    background-color: #fff;
+    color: #000;
+}
+#drag_me {
+  -webkit-user-drag: element;
+}

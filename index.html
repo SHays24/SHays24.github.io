@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/98.css">
+  <link rel="manifest" href="manifest.webmanifest">
+  
+</head>
+<button id="add-button">Add to home screen</button>
+<body style="background-color:#008080;">
+  <script src="script.js"></script>
+  
+  <div style="width: true; height: 95vh">
+    <div class="window" style="width: 20%; height: 20%" id="window" id="drag_me">
+      <div class="title-bar" id="title-bar">
+        <div class="title-bar-text">A Window With Stuff In It</div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize" onclick="window.fncShowHideList()"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close"
+            onClick="document.getElementById('window').style.display = 'none'; document.getElementById('tab1').style.display = 'none'"></button>
+        </div>
+      </div>
+      <div class="window-body">
+        <p>There's so much room for activities!</p>
+        <button onClick="document.getElementById('w').style.display = 'none'">Click Me</button>
+      </div>
+    </div>
+  </div>
+  <footer><button><img src="https://win98icons.alexmeub.com/icons/png/windows-0.png">
+      <p class="window-body" id="start">Start</p>
+    </button>
+    <button class="active" onClick="document.getElementById('window').style.display = ''; window.fncShowHideList()"
+      id='tab1'>hi</button>
+  </footer>
+</body>
+
+</html>
