@@ -47,7 +47,7 @@ if ('serviceWorker' in navigator) {
 }
 
 // Code to handle install prompt on desktop
-
+/*
 let deferredPrompt;
 const addBtn = document.querySelector('add-button');
 
@@ -80,4 +80,4 @@ window.addEventListener('appinstalled', (event) => {
   console.log('👍', 'appinstalled', event);
   // Clear the deferredPrompt so it can be garbage collected
   window.deferredPrompt = null;
-});
+});*/
