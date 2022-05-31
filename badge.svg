@@ -31,14 +31,14 @@
 		<text transform="matrix(1 0 0 1 8.3621 28.441)" class="st3 st4 st5">readme.md</text>
 	</g>
 	<rect x="370.8" class="st2" width="40.2" height="40"/>
-	<text transform="matrix(1 0 0 1 385.3785 27.8096)"><tspan x="0" y="0" class="st3 st6 st5">▭</tspan><tspan x="11" y="0" class="st6 st7"> </tspan></text>
+	<text transform="matrix(1 0 0 1 385.3785 27.8096)"><tspan x="0" y="0" class="st3 st6 st5">▭</tspan><tspan x="11" y="0" class="st6 st7"></tspan></text>
 	<rect x="330.9" y="0" class="st8" width="39.9" height="40"/>
 	<path class="st8" d="M338.7,93.4"/>
 	<polyline class="st8" points="370.8,0 451.1,0 451.1,40 411,40 370.8,40 	"/>
 	<path class="st8" d="M418,157.3"/>
 	<line class="st8" x1="411" y1="0" x2="411" y2="40"/>
 	<rect x="411" y="0" class="st2" width="40.2" height="40"/>
-	<text transform="matrix(1 0 0 1 424.7779 27.8096)" class="st3 st6 st5">X</text>
+	<text transform="matrix(1 0 0 1 424.7779 27.8096)" class="st3 st6 st5">⨉</text>
 </g>
 <g id="Layer_2">
 	<text transform="matrix(1 0 0 1 1057.9352 540)" class="st6 st7">https://flat.badgen.net/badge/readme.md/%E2%80%94%20%7C%20%E2%96%AD%20%7C%20X/c3c3c3?icon=github&amp;labelColor=010081&amp;scale=2</text>
