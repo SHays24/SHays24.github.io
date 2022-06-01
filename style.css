@@ -1,7 +1,7 @@
-.window1 {
+.window {
   width: 25%;
   height: 30%;
-  position: relative;
+  position: absolute;
 }
 .draggable.dragging {
   user-select: none;
