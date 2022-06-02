@@ -13,7 +13,7 @@
     A Fatal Error 0x194 Has Occurred, Resource Not Found. The Current Application Will Be Terminated.<br/>
     <ul style="font-size: 30px">
     <li>Press Any Key To Return Home</li>
-    <li>Or Click <a href="/">Here</a> </li>
+    <li>Or Click <a href="javascript:history.go(-1)">Here</a> </li>
     <li>Or Press CTRL + ALT + DEL To Restart Computer</li>
     </ul>
     
@@ -30,7 +30,7 @@ a {
 </style>
 <script>
 document.body.addEventListener("keydown", function (event) {
-  	window.location.replace("/");
+  	window.location.replace("javascript:history.go(-1)");
 });
 </script>
 </html>
