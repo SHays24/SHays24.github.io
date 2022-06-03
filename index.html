@@ -11,29 +11,45 @@
   
 </head>
 <body style="background-color:#008080;" id="body">
-    <div class="window" style="width: 20%; height: 20%" id="window" id="drag_me">
-      <div class="title-bar" id="titlebar">
+    <div class="window" style="width: 20%; height: 20%" id="window1" id="drag_me">
+      <div class="title-bar" id="titlebar1">
         <div class="title-bar-text">A Window With Stuff In It</div>
         <div class="title-bar-controls">
-          <button aria-label="Minimize" onclick="window.fncShowHideList()"></button>
+          <button aria-label="Minimize" onclick="window.fncShowHideList('1')"></button>
           <button aria-label="Maximize"></button>
           <button aria-label="Close"
-            onClick="document.getElementById('window').style.display = 'none'; document.getElementById('tab1').style.display = 'none'"></button>
+            onClick="document.getElementById('window1').style.display = 'none'; document.getElementById('tab1').style.display = 'none'"></button>
         </div>
       </div>
-      <div class="window-body">
+      <div class="window-body" id="body1">
         <p>There's so much room for activities!</p>
         <button onClick="/sdkfsl">Click Me</button>
       </div>
     </div>
   </div>
-  <script src="script.js"></script>
+  <div class="window" id="window2">
+    <div class="title-bar" id="titlebar2">
+      <div class="title-bar-text">kjkj</div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize" onclick="window.fncShowHideList('2')"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close" onClick="document.getElementById('window2').style.display = 'none'; document.getElementById('tab2').style.display = 'none'"></button>
+        </div>
+      </div>
+      <div class="window-body" id="body2">        
+    <p>jdklfjslajfklsdfjlaskjklvjfnvrovnjldjvfvnsan;s</p>
+      </div>
+  </div>
+  
   <footer><button><img src="https://win98icons.alexmeub.com/icons/png/windows-0.png">
       <p class="window-body" id="start">Start</p>
     </button>
-    <button class="active" onClick="document.getElementById('window').style.display = ''; window.fncShowHideList()"
-      id='tab1'>hi</button>
+    <button class="active" onClick="document.getElementById('window1').style.display = ''; window.fncShowHideList(1)"
+      id='tab1'>Tab1</button>
+    <button class="active" onClick="document.getElementById('window2').style.display = ''; window.fncShowHideList(2)"
+      id='tab2'>Tab2</button>
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>

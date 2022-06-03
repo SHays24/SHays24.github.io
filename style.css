@@ -3,7 +3,7 @@
   height: 30%;
   position: absolute;
 }
-.draggable.dragging {
+.title-bar {
   user-select: none;
 }
 .title-bar {
@@ -18,7 +18,9 @@ footer {
   width: 400%;
   max-height: 10%;
   line-height: 1.25;
-  background: #c0c0c0
+  background: #c0c0c0;
+
+  margin: 0px;
 }
 button.active {
   box-shadow: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a,
@@ -28,8 +30,14 @@ button.minimized {
   
 }
 #tab1 {
-  height: 90%;
-  position: inherit;
+  height: inherit;
+  display: inline;
+  position: relative;
+}
+#tab2 {
+  height: inherit;
+  display: inline;
+  position: relative;
 }
 #start {
   display: inline-block;
@@ -41,4 +49,10 @@ button.minimized {
   height:1px;
   width: 1px;
   visibility: ;
+}
+.focus {
+  z-index: 3;
+}
+.unfocus {
+  z-index: 1;
 }
