@@ -1,10 +1,20 @@
+const mypreloader = document.querySelector('.preloader');
+const fadeOutEffect = mypreloader.remove();
+window.addEventListener('load', fadeOutEffect);
 window.fncShowHideList = function(x) {
     //alert('it ran: ');
-    if (document.getElementById('tab'+x).getAttribute('class') === 'active') {
+    if (x === 3) {
+      if (document.getElementById('start').getAttribute('class') === 'active') {
+        document.getElementById('start').setAttribute('class', 'minimized');     
+        document.getElementById('window-start').style.display = 'none';
+      } else { document.getElementById('start').setAttribute('class', 'active');
+        document.getElementById('window-start').style.display = '';
+      };
+    }
+    else if (document.getElementById('tab'+x).getAttribute('class') === 'active') {
       document.getElementById('tab'+x).setAttribute('class', 'minimized');     
       document.getElementById('window'+x).style.display = 'none';
-    } else {
-        document.getElementById('tab'+x).setAttribute('class', 'active');
+    } else { document.getElementById('tab'+x).setAttribute('class', 'active');
       document.getElementById('window'+x).style.display = '';
   };
 };

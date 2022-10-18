@@ -1,3 +1,18 @@
+.preloader {
+  align-items: center;
+  background: #FFF;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  transition: opacity 0.2s linear;
+  width: 100%;
+  z-index: 9999;
+  opacity: 1;
+  transform: opacity 1s linear;
+}
 .window {
   width: 25%;
   height: 30%;
@@ -16,10 +31,10 @@ footer {
   position: fixed;
   bottom: 0%;
   width: 400%;
-  max-height: 10%;
+  height: 3.8vh;
   line-height: 1.25;
   background: #c0c0c0;
-
+  left: 0%;
   margin: 0px;
 }
 button.active {
@@ -31,28 +46,88 @@ button.minimized {
 }
 #tab1 {
   height: inherit;
-  display: inline;
+  display: inline-block;
   position: relative;
 }
 #tab2 {
   height: inherit;
-  display: inline;
+  display: inline-block;
   position: relative;
 }
-#start {
-  display: inline-block;
+#social {
+  height: inherit;
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+ 	padding: 10px;
+	text-align: center;   
 }
-.add-button {
-  position: absolute;
-  top: 1px;
-  left: 1px;
-  height:1px;
-  width: 1px;
-  visibility: ;
+#start {
+  height: inherit;
+  display: inline-block;
+  position: relative;
 }
 .focus {
   z-index: 3;
 }
 .unfocus {
   z-index: 1;
+}
+:root {
+  --dialog-blue: #000080;
+  --dialog-blue-light: #1084d0;
+}
+.logo-text {
+  width: 100%;
+  position: absolute;
+  color: white;
+  writing-mode: vertical-lr;
+  display: inline;
+  bottom: 2vh;
+}
+.windows-bar {
+  background: 
+  linear-gradient(180deg, var(--dialog-blue), var(--dialog-blue-light));
+  padding: 3px 2px 3px 3px;
+  justify-content: space-between;
+  align-items: center;
+  height: 97%;
+  width: 10%;
+}
+
+#window-start {
+  position: absolute;
+  bottom: 3.8vh;
+  left: 0.5%;
+  height: 30%;
+  width: 20%;
+}
+.bold {
+  font-weight: bold;
+}
+span {
+  font-weight: normal;
+}
+.logo-text {
+  
+}
+#window1, #window2 {
+  filter: drop-shadow(0px 0px 1px #000);
+}
+.windows-icon {
+	height: 32px;
+  width: 32px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: inline-block;
+  vertical-align:middle;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAIVBMVEUAAAAAAACAAAD/AAAA/wAAgAAAAIAAAP///wCAgAD///8Zy0fQAAAAAXRSTlMAQObYZgAAAAFiS0dECmjQ9FYAAAAHdElNRQfiBhoAOBwkIrLGAAAAmUlEQVQoz7XRMQ7CMAwFUFsevNoMnMMiV+gFkDiIp+YKXdk4LnYiqEEdwdt/SuKvFuCvg6oqX3kIziw6J0Eyip6aLlfNs4KY0AKWAaAoAm+guBDvWAGL2HYAMqKES+y4DYBGZlDWgtFhj3PX7V579ICt9ngBzx5ewCP2HYCdOWGNHY8B0Nn9o4fzYY88rbXH+HClRx3BH//AJ8kFIO93liGNAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE4LTA2LTI2VDAwOjU2OjI4LTA0OjAwjfNqqgAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOC0wNi0yNlQwMDo1NjoyOC0wNDowMPyu0hYAAAAASUVORK5CYII=);
+}
+.repl {
+  background-image: url(https://repl.it/public/images/logo.svg);
+  height: 15px;
+  width: 15px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: inline-block;
 }
