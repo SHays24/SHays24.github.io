@@ -25,7 +25,7 @@
   height: 10%;
 }
 .title-bar::before {
-
+  height: height;
 }
 footer {
   position: fixed;
@@ -42,7 +42,7 @@ button.active {
     inset -2px -2px #dfdfdf, inset 2px 2px #808080;
 }
 button.minimized {
-  
+  height: height;
 }
 #tab1 {
   height: inherit;
@@ -109,7 +109,7 @@ span {
   font-weight: normal;
 }
 .logo-text {
-  
+  height: height;
 }
 #window1, #window2 {
   filter: drop-shadow(0px 0px 1px #000);
