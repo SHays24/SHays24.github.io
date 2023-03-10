@@ -67,6 +67,9 @@ button.minimized {
   display: inline-block;
   position: relative;
 }
+.menu-entry{
+  border: red;
+}
 .focus {
   z-index: 3;
 }
