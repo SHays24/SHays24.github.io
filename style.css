@@ -96,6 +96,7 @@ button.minimized {
   align-items: center;
   height: 97%;
   width: 10%;
+  z-index: 1
 }
 
 #window-start {
@@ -104,6 +105,9 @@ button.minimized {
   left: 0.5%;
   height: 30%;
   width: 20%;
+  
+}
+#window-start > div.window-body {
 }
 .bold {
   font-weight: bold;
@@ -134,3 +138,19 @@ span {
 	background-repeat: no-repeat;
 	display: inline-block;
 }
+ul {
+  display: inline-block;
+  min-width: 100%;
+  list-style: none;
+}
+li { 
+  margin: 0;
+  padding: 0; 
+  padding-left: 10px;
+}
+li:hover > div {
+  color:#ffffff;
+  background-color: #000080;
+  z-index: -1;
+}
+
